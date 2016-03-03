@@ -1,4 +1,4 @@
-### Instalacion
+# Instalacion
 
 ##Descargar el archivo tutoria.conf
 >Abre el archivo con tu editor de texto favorito, una vez hecho esto deves de modificar lo siguiente:
@@ -15,7 +15,7 @@ DocumentRoot <Directorio en donde se encuentra tu proyecto>/<Nombre del proyecto
 /etc/apache2/site-avaliable/
 ```
 
-#Ejemplo 
+###Ejemplo 
 ```
 nano /etc/apache2/sites-avaliable/tutorial.conf
 ```
@@ -34,4 +34,8 @@ nano /etc/hosts
 
 127.0.0.1       <Servername>
 ```
-
+##Reiniciar Servidor apache
+>necesitas ser root
+```
+service apache2 restart
+```
