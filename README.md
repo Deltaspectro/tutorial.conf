@@ -1,5 +1,7 @@
-# Instalacion
-Descarga y abre el archivo con tu editor de texto favorito, una vez hecho esto deves de modificar lo siguiente:
+### Instalacion
+
+##Descargar el archivo tutoria.conf
+>Abre el archivo con tu editor de texto favorito, una vez hecho esto deves de modificar lo siguiente:
 
 ```
 DocumentRoot "<Directorio en donde se encuentra tu proyecto>/<Nombre del proyecto>/public>"
@@ -7,10 +9,29 @@ DocumentRoot "<Directorio en donde se encuentra tu proyecto>/<Nombre del proyect
 "<Directory <Directorio en donde se encuentra tu proyecto>/<Nombre del proyecto>/public>"
 ```
 
+##Crea un nuevo archivo de configuracion
+>desde la terminal crear un nuevo documento de texto en la siguiente ruta: 
+```
+/etc/apache2/site-avaliable/
+```
 
-desde la terminal crear un nuevo documento de texto en la siguiente ruta: /etc/apache2/site-avaliable/ con la extension ".conf"
+#Ejemplo 
+```
+nano /etc/apache2/sites-avaliable/tutorial.conf
+```
 
-ejemplo: nano /etc/apache2/sites-avaliable/tutorial.conf
+>y pegar el contenido del archivo modificado 
 
+##Dar de alta el archivo de configuracion
 
-y pegar el contenido del archivo modificado 
+- Desde la terminal escribir "a2ensite nombredelarchivo.conf"
+- activar modo reescritura "a2enmod rewrite"
+
+##Editar la lista de host
+
+```
+nano /etc/hosts
+
+127.0.0.1       <Servername>
+```
+
